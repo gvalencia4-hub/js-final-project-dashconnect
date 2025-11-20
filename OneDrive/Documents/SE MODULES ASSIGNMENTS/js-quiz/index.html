@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals Quiz</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="quiz-container">
+      <h1 class="quiz-title">JavaScript Fundamentals Quiz</h1>
+
+      <p class="intro">
+        Test your knowledge of JavaScript basics: variables, arrays, loops, and
+        the DOM!
+      </p>
+
+      <div id="question-container"></div>
+      <div id="options-container"></div>
+
+      <button id="next-button" disabled>Next Question</button>
+    </div>
+
+    <div id="score-container" class="hidden">
+      <h2>Your Score</h2>
+      <p id="score"></p>
+      <button id="restart-button">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
