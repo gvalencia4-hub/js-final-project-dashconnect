@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashConnect - API Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <h1>DashConnect</h1>
+        <p>Your mini JavaScript API dashboard</p>
+      </header>
+
+      <main class="grid">
+        <!-- 1. Dog API -->
+        <section class="card">
+          <h2>🐶 Random Dog</h2>
+          <button id="dog-btn">Get Dog</button>
+          <p id="dog-status" class="status"></p>
+          <div class="image-wrapper">
+            <img id="dog-img" alt="Random dog will appear here" />
+          </div>
+        </section>
+
+        <!-- 2. Cat API -->
+        <section class="card">
+          <h2>🐱 Random Cat</h2>
+          <button id="cat-btn">Get Cat</button>
+          <p id="cat-status" class="status"></p>
+          <div class="image-wrapper">
+            <img id="cat-img" alt="Random cat will appear here" />
+          </div>
+        </section>
+
+        <!-- 3. Weather (Los Angeles using Open-Meteo) -->
+        <section class="card">
+          <h2>🌤️ Weather (Los Angeles)</h2>
+          <button id="weather-btn">Get Weather</button>
+          <p class="hint">Uses Open-Meteo current weather for LA.</p>
+          <p id="weather-output" class="output"></p>
+        </section>
+
+        <!-- 4. Currency (USD → EUR) -->
+        <section class="card">
+          <h2>💱 USD → EUR</h2>
+          <button id="currency-btn">Get Rate</button>
+          <p class="hint">ExchangeRate API (no key needed).</p>
+          <p id="currency-output" class="output"></p>
+        </section>
+
+        <!-- 5. Joke API -->
+        <section class="card">
+          <h2>😂 Random Joke</h2>
+          <button id="joke-btn">Tell me a joke</button>
+          <p id="joke-output" class="output"></p>
+        </section>
+
+        <!-- 6. GitHub User -->
+        <section class="card">
+          <h2>🧑‍💻 GitHub User</h2>
+          <label for="github-username" class="hint">
+            Enter a GitHub username (or leave blank for "octocat")
+          </label>
+          <input
+            id="github-username"
+            type="text"
+            placeholder="codingtemple"
+            autocomplete="off"
+          />
+          <button id="github-btn">Fetch Profile</button>
+          <div id="github-output" class="github-output"></div>
+        </section>
+
+        <!-- 7. Movies (TMDB Trending) -->
+        <section class="card">
+          <h2>🎬 Trending Movies</h2>
+          <p class="hint">
+            Uses TMDB trending endpoint. Add your own API key in the JS panel.
+          </p>
+          <button id="movies-btn">Load Movies</button>
+          <ul id="movies-list" class="list"></ul>
+        </section>
+
+        <!-- 8. API of your choice – Bored API -->
+        <section class="card">
+          <h2>🎲 Activity Suggestion</h2>
+          <button id="activity-btn">I’m bored, help!</button>
+          <p id="activity-output" class="output"></p>
+          <p id="activity-meta" class="hint"></p>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
